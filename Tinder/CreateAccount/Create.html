@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Account</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="create.js"></script>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+        <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+
+        <form class="form" id="from" action="/HomePage/Home.html" method="GET"> <!--add an action probly post-->
+            <div class="form-control">
+                <label>Username*</label>
+                <input type="text" placeholder="BellaSmith1" id="username" name="username">
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Email*</label>
+                <input type="email" placeholder="b.smith1@gmail.com" id="email" name="email">
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Password*</label>
+                <input type="password" placeholder="Password" id="password" name="password">
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-control">
+                <label>Verify Password*</label>
+                <input type="password" placeholder="Verify Password" id="vPassword" name="vPassword">
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i> -->
+                <small>Error Message</small>
+            </div> 
+
+            <div class="form-control">
+                <label>Dog Name</label>
+                <input type="dogName" placeholder="Bella Smith" id="dogName" name="dogName">
+            </div>
+
+            <div class="form-control">
+                <label>Dog Breed</label>
+                <input type="dogBreed" placeholder="Golden Retriever" id="dogBreed" name="dogBreed">
+            </div>
+
+            <div class="form-control">
+                <label>Dog Gender</label>
+                <input type="radio" id="dogGender" name="dogGender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="dogGender" name="dogGender" value="Female">
+                <label for="Female">Female</label>
+            </div>
+
+            <div class="form-control">
+                <label>Picture of Dog</label>
+                <input name="image" type="file" accept="image/png, image/jpeg"/>
+            </div>
+
+            <button type="submit" id="btn">Submit</button>
+        </form> 
+    </div>

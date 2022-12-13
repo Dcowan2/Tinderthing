@@ -1,0 +1,7 @@
+.card{
+    position: relative;
+    background-color: aqua;
+    width: 600px;
+    max-width: 85w;
+    height: 50vh;
+}

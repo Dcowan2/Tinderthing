@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    table
+    {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th
+    {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+</style>
+
+<script type="text/javascript">
+
+    function formValidation()
+    {
+        var username = document.getElementById("userName").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var verifyPassword = document.getElementById("verifyPassword").value;
+        var ownerName = document.getElementById("ownerName").value;
+        var dogName = document.getElementbyId("dogName").value;
+        var dogBreed = document.getElementbyId("dogBreed").value;
+
+    if (username == "" || username == undefined)
+    {
+        alert("Please enter User Name");
+        return false;
+    }
+
+    if (email == "" || email == undefined)
+    {
+        alert("Please enter Email");
+        return false;
+    }
+
+    if (password == "" || password == undefined)
+    {
+        alert("Please enter Password");
+        return false;
+    }
+
+    if (verifyPassword == "" || verifyPassword == undefined)
+    {
+        alert("Please enter Verify Password");
+        return false;
+    }
+
+    if (password != verifyPassword)
+    {
+        alert("Password and Verify Password should match");
+        return false;
+    }
+    if (ownerName == "" || ownerName == undefined)
+    {
+        alert("Please enter Owner Name");
+        return false;
+    }
+    if (dogName == "" || dogName == undefined)
+    {
+        alert("Please enter Dog Name");
+        return false;
+    }
+    if (dogBreed == "" || dogBreed == undefined)
+    {
+        alert("Please enter Dog Breed");
+        return false;
+    }
+    return true;
+    }
+ </script>
+</head>
+<body>
+
+<h3>Create your account</h3>
+
+<form name="signupForm" method="GET" action="PuppySwipeCompleted.html"onSubmit="return formValidation();">
+
+<div id="signupFields" style="border: medium;">
+
+<h3>User Info</h3>
+<table border="1">
+<tr>
+    <td>User Name<span style="color: red;">*</span></td>
+    <td><input type="text" name="userName" id="userName" /></td>
+</tr>
+<tr>
+    <td>Email<span style="color: red;">*</span></td>
+    <td><input type="text" name="email" id="email" /></td>
+</tr>
+<tr>
+    <td>Owner Name<span style="color: red;">*</span></td>
+    <td><input type="text" name="ownerName" id="ownerName" /></td>
+</tr>
+<tr>
+    <td>Dog Name<span style="color: red;">*</span></td>
+    <td><input type="text" name="dogName" id="dogName" /></td>
+</tr>
+<tr>
+    <td>Dog Breed<span style="color: red;">*</span></td>
+    <td><input type="text" name="dogBreed" id="dogBreed" /></td>
+</tr>
+<tr>
+    <td>Password<span style="color: red;">*</span></td>
+    <td><input type="password" name="password" id="password" /></td>
+</tr>
+<tr>
+    <td>Verify Password<span style="color: red;">*</span></td>
+    <td><input type="password" name="verifyPassword" id="verifyPassword" /></td>
+</tr>
+</table>
+</div>
+
+<br /> <input type="submit" name="submit" value="Create Account!" />
+</form>
+</body>
+</html>
+
+
+
